@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, helvetica, sans-serif;
+}
+
+body {
+  background: #262626;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  background: #424242;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 300px;
+  height: 400px;
+}
+
+form h2 {
+  margin-top: 20px;
+  font-size: 55px;
+  color: while;
+  margin-bottom: 30px;
+}
+
+form input {
+  border: none;
+  background: none;
+  text-align: center;
+  outline: none;
+  padding: 10px;
+  margin: 20px;
+  color: while;
+  height: 30px;
+  width: 70%;
+  border-radius: 40px;
+  transition: 0.2s ease-in;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  border: solid 2px #189cfc;
+}
+
+form input[type="submit"] {
+  border: solid 2px #55e6c1;
+  box-sizing: border-box;
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  width: 80px;
+  border: solid 2px #55e6c1;
+}
+
+form input[type="submit"]:hover {
+  background: #55e6c1;
+  color: #182c61;
+}
+
+.datetime {
+  color: #fff;
+  background: #10101e;
+  font-family: "segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #2e94e3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5px;
+  transition-property: background, box-shadow;
+}
+
+.datetime {
+  background: #2e94e3;
+  box-shadow: 0 0 30px #2e94e3;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child {
+  background: #2e94e3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
